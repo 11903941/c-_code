@@ -1,0 +1,18 @@
+//move all negative element to one side of an array
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int i;
+	int arr[]={2,-4,7,-9,-6,9,-5,8};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	for( i=0;i<n-1;i++){
+		for(int j=0;j<n-i-1;j++)
+		if(arr[j]>=0){
+			swap(arr[j],arr[j+1]);
+		}
+	}
+	for(i=0;i<n;i++){
+		cout<<arr[i]<<ends;
+	}
+	return 0;
+}
