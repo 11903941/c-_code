@@ -1,0 +1,20 @@
+//Find the largest sum contiguous array using kadane's algo
+#include<iostream>
+using namespace std;
+int main(){
+	int arr[]={-2,9,-3,4,-1,-2,7,1,5,-3};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int msf=INT_MIN;
+	int men=0;
+	for(int i=0;i<n;i++){
+		men=men+arr[i];
+		if(men<arr[i]){
+			men=arr[i];
+		}
+		if(msf<men){
+			msf=men;
+		}
+	}
+	cout<<msf;
+	return 0;
+}
