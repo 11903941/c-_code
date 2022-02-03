@@ -1,0 +1,27 @@
+//convert celsius temperature celsius to fahrenheight and vice-versa
+#include<iostream>
+using namespace std;
+int main(){
+	float c,f;
+	char ch;
+	cout<<"What you want to find either f or c"<<endl;
+	cin>>ch;
+	
+	if(ch=='c'){
+	cout<<"enter fahrenheight"<<endl;
+	cin>>f;
+	c=((f-32)*5)/9;
+	cout<<"fahrenheight in celsius will be"<<ends<<c<<endl;}
+	else if(ch=='f'){
+		cout<<"enter celsius"<<endl;
+		cin>>c;
+		f=((c*9)/5)+32;
+		cout<<"celsius will be in fahrenheight :"<<f<<endl;
+	}
+	else{
+		cout<<"you have entered wrong character "<<endl;
+	}
+	
+	return 0;
+	
+}
