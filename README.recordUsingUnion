@@ -1,0 +1,29 @@
+// write a program to print student records using union
+#include<iostream>
+using namespace std;
+int main(){
+	int i,n;
+	cout<<"enter the number of student "<<endl;
+	cin>>n;
+	union student {
+		int rollNo;
+
+		float avgmarks;
+		char grade;
+		int regNo;	
+	};
+	union student s;
+	for(int i=0;i<n;i++){
+	cin>>s.rollNo;
+	cout<<s.rollNo<<endl;
+
+	cin>>s.avgmarks;
+	cout<<s.avgmarks<<endl;
+	cin>>s.grade;
+	cout<<s.grade<<endl;
+	cin>>s.regNo;
+	cout<<s.regNo<<endl;
+}
+	return 0;
+}
+
