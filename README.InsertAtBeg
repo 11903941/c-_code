@@ -1,0 +1,19 @@
+//Insert an element at beginning of an array
+#include<iostream>
+using namespace std;
+int main(){
+	int i,temp;
+	int arr[]={9,2,6,4,8,1};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	cout<<"enter an element y0u want to insert"<<endl;
+	cin>>temp;
+	for( i=n;i>=0;i--){
+		arr[i]=arr[i-1];
+	}
+	arr[0]=temp;
+	n++;
+	for(i=0;i<n;i++){
+		cout<<arr[i] <<ends;
+	}
+	return 0;
+}
