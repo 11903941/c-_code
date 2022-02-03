@@ -1,0 +1,17 @@
+// Write a program to convert lowecase string to uppercase
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+	string s1;
+	cout<<"enter a string "<<endl;
+	cin>>s1;
+	int n=s1.size();
+	for(int i=0;i<n;i++){
+	if(s1[i]>=97 &&s1[i]<=122){
+		s1[i]=s1[i]-32;
+	}
+}
+cout<<s1;
+return 0;
+}
