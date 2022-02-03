@@ -1,0 +1,23 @@
+
+// Insert an element at a particular position
+#include<iostream>
+using namespace std;
+int main(){
+	int n,i,k,temp;
+	int arr[]={3,8,1,9,2,6,7};
+	n = sizeof(arr)/sizeof(arr[0]);
+	cout<<"you want to insert at which position"<<endl;
+	cin>>k;
+	cout<<"enter a number you want to insert :"<<endl;
+	cin>>temp;
+	for(i=n;i>=k;i--)
+	{
+		arr[i]=arr[i-1];
+	}
+	arr[k]=temp;
+	n++;
+	for(i=0;i<n;i++){
+		cout<<arr[i];
+	}
+	return 0;
+}
