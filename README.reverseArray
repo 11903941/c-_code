@@ -1,0 +1,19 @@
+//reverse an element of an array
+
+#include<iostream>
+using namespace std;
+int main(){
+	int i,end;
+	int arr[]={9,2,6,4,8,3};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	end=n;
+	for(i=0;i<n/2;i++,end--){
+		int temp=arr[i];
+		arr[i]=arr[end-1];
+		arr[end-1]=temp;
+	}
+	for(i=0;i<n;i++){
+		cout<<arr[i]<<ends;
+	}
+	return 0;
+}
