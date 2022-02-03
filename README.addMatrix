@@ -1,0 +1,51 @@
+// Add two matrix
+#include<iostream>
+using namespace std;
+int main(){
+	int arr1[10][10],arr2[10][10],arr[10][10];
+	int m,n,i,j;
+	cin>>m>>n;
+	cout<<"enter an element of first matrix :"<<endl;
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++){
+			cin>>arr1[i][j];
+		}
+		cout<<endl;
+	}
+	
+	cout<<"First matrix is :"<<endl;
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++){
+			cout<<arr1[i][j]<<ends;
+		}
+		cout<<endl;
+	}
+	cout<<"Enter an element of 2nd  matrix"<<endl;
+	for(i=0;i<m;i++)
+	{
+	for(j=0;j<n;j++){
+		cin>>arr2[i][j];
+		}
+		cout<<endl;
+	}
+	
+	cout<<"Second matrix is :"<<endl;
+	for(i=0;i<m;i++)
+	{
+		for(j=0;j<n;j++){
+			cout<<arr2[i][j]<<ends;
+		}
+		cout<<endl;
+	}
+	cout<<"after adding a matrix :"<<endl;
+	for(i=0;i<m;i++){
+		for(j=0;j<n;j++){
+			arr[i][j]=arr1[i][j]+arr2[i][j];
+			cout<<arr[i][j]<<ends;
+		}
+		cout<<endl;
+	}
+	return 0;
+}
