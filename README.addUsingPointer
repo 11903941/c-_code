@@ -1,0 +1,13 @@
+// Write a program to print two number using pointer
+
+#include<iostream>
+using namespace std;
+int main(){
+	int a,b,*p,*q;
+	cout<<"enter two number"<<endl;
+	cin>>a>>b;
+	p=&a;
+	q=&b;
+	cout<<"addition of two number is :"<<*p+*q;
+	return 0;
+}
