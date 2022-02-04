@@ -1,0 +1,28 @@
+//write a program to print tribonacci series using recursion
+#include<iostream>
+using namespace std;
+tribonacci(int n)
+{
+	if(n<=2){
+		return 0;}
+	else if(n==3){
+			return 1;
+		}
+	else{
+		return tribonacci(n-1)+tribonacci(n-2)+tribonacci(n-3);
+	}
+}
+void tribo(int n){
+		for(int i=1;i<=n;i++)
+	{
+		cout<<tribonacci(i)<<ends;
+	}
+}
+
+int main(){
+	int n;
+	cout<<"enter number of terms"<<endl;
+	cin>>n;
+    tribo( n);
+	return 0;
+}
