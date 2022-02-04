@@ -1,0 +1,16 @@
+// write a program to print first n natural number
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"how much number you want to print"<<endl;
+	cin>>n;
+	cout<<"natural numbers are"<<endl;
+	for(int i=1;i<=n;i++)
+	{
+		cout<<i<<ends;
+	}
+	return 0;
+}
+
