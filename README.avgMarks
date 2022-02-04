@@ -1,0 +1,23 @@
+
+// write a program to print average marks of n subject
+#include<iostream>
+using namespace std;
+int n;
+int sub[10];
+int main(){
+	int i,sum=0;
+	float avg;
+	cout<<"enter value of n"<<endl;
+	cin>>n;
+	cout<<"enter the marks of subject"<<endl;
+	for(i=0;i<n;i++){
+		cin>>sub[i];
+		}
+    for(i=0;i<n;i++)
+    {
+    	sum=sum+sub[i];
+	}
+	avg=sum/n;
+	cout<<"average will be :"<<avg<<endl;
+	return 0;
+}
