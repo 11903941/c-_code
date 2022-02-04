@@ -1,0 +1,31 @@
+// write a program to print fibonacci series
+#include<iostream>
+using namespace std;
+void fibonacci(int n){
+	int fib1=0, fib2=1,next;
+	if(n<1){
+		return;
+	}
+	
+	else {
+		cout<<fib1<<ends;
+		for(int i=1;i<n;i++){
+			next=fib1+fib2;
+			fib1=fib2;
+			fib2=next;
+			cout<<next<<ends;
+		}
+	}
+	
+	
+	
+}
+int main(){
+	int n;
+
+	cout<<"enter how much term you want to print"<<endl;
+	cin>>n;
+	fibonacci(n);
+	return 0;
+}
+
