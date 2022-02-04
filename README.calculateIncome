@@ -1,0 +1,20 @@
+// write a program to print about tax according to income earned by user
+
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int income;
+	cout<<"enter your monthly income"<<endl;
+	cin>>income;
+	if(income<=10000){
+		cout<<"you dont have to give any tax"<<endl;
+	}
+	else if(income>10000 && income<=100000){
+		cout<<"you need to give 10% tax"<<endl;
+	}
+	else if(income>100000){
+		cout<<"you need to give 25% tax"<<endl;
+	}
+	return 0;
+}
