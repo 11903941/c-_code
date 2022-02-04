@@ -1,0 +1,21 @@
+//write a program to check a number is perfect or not
+
+#include<iostream>
+using namespace std;
+int main(){
+	int num,que=0;
+	cout<<"enter a number"<<endl;
+	cin>>num;
+	for(int i=1;i<=num/2;i++){
+		if(num%i==0){
+			que=que+i;
+		}
+	}
+	if(que==num){
+		cout<<"number is perfect"<<endl;
+	}
+	else{
+		cout<<"number is not perfect"<<endl;
+	}
+	return 0;
+}
