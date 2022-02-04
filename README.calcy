@@ -1,0 +1,25 @@
+
+//write a program to make a calculator using switch case
+#include<iostream>
+using namespace std;
+int main(){
+	int ch,a,b;
+	cout<<"press 1 for add, 2 for sub , 3 for multi ,4 for div and 5 for modulo"<<endl;
+	cin>>ch;
+	cout<<"enter number"<<endl;
+	cin>>a>>b;
+	switch(ch){
+		case 1: cout<<"add of two num is :"<<a+b<<endl;
+		break;
+		case 2: cout<<"sub of two num is :"<<a-b<<endl;
+		break;
+		case 3: cout<<"multiply of two num is :"<<a*b<<endl;
+		break;
+		case 4: cout<<"division of two num is :"<<a/b<<endl;
+		break;
+		case 5: cout<<"modulo of two num is :"<<a%b<<endl;
+		break;
+		default : cout<<"you entered wrong num"<<endl;
+	}
+	return 0;
+}
