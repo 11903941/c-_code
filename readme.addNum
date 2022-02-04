@@ -1,0 +1,10 @@
+// add two number
+#include<iostream>
+using namespace std;
+int main(){
+	cout<<"enter two number"<<endl;
+	int a,b;
+	cin>>a>>b;
+	cout<<a+b;
+	return 0;
+}
