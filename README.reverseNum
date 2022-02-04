@@ -1,0 +1,16 @@
+// write a program to print reverse of number
+
+#include<iostream>
+using namespace std;
+int main(){
+	int num,rev;
+	cout<<"enter a number"<<endl;
+	cin>>num;
+	cout<<"reverse of number is :"<<endl;
+	while(num!=0){
+	rev=num%10; 
+	cout<<rev;
+	num=num/10;
+}
+return 0;
+}
