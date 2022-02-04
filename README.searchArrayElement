@@ -1,0 +1,27 @@
+// write a program to search array elements with appropriate location
+#include<iostream>
+using namespace std;
+int main(){
+	int arr[10];
+	int i,n,k,found=0;
+	cout<<"enter number of element of an array"<<endl;
+	cin>>n;
+	cout<<"enter array element"<<endl;
+	for(i=0;i<n;i++){
+		cin>>arr[i];
+	}
+	cout<<"which number you want to find"<<endl;
+	cin>>k;
+	for(i=0;i<n;i++){
+		if(k==arr[i]){
+			cout<<"number is found at :"<< i+1<<" Position"<<endl;
+			found++;
+		}
+	}
+	if(found==0){
+		cout<<"number is not found "<<endl;
+	}
+	
+     return 0;
+	
+}
