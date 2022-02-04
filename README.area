@@ -1,0 +1,41 @@
+//write a program to print area of 
+
+#include<iostream>
+#define pi 3.14
+using namespace std;
+areaOfCircle(int r)
+{
+	float area=pi*r*r;
+	cout<<"area of circle is :"<<area<<endl;
+}
+areaOfSquare(int a){
+	float area=a*a;
+	cout<<"area of sqare :"<<area<<endl;
+}
+areaOfRectangle(int l, int b){
+	float area=l*b;
+	cout<<"area of rectangle is :"<<area<<endl;
+}
+areaOfTriangle(int base ,int height)
+{
+	float area=(0.5*base*height);
+	cout<<"area of triangle is :"<<area<<endl;
+}
+int main(){
+	int r,a,l,b;
+	cout<<"enetr radius of a circle :"<<endl;
+	cin>>r;
+	areaOfCircle( r);
+	cout<<"enter the side of square"<<endl;
+	cin>>a;
+	areaOfSquare(a);
+	cout<<"enter l and b of rectangle "<<endl;
+	cin>>l>>b;
+	areaOfRectangle(l,b);
+	int base, height;
+	cout<<"enter base and height of triangle "<<endl;
+	cin>>base>>height;
+	areaOfTriangle(base,height);
+	return 0;
+}
+
