@@ -1,0 +1,24 @@
+//write a program to print prime or composite number
+#include<iostream>
+using namespace std;
+int main(){
+	int num,count=0;
+	cout<<"enter a number"<<endl;
+	cin>>num;
+	for(int i=2;i*i<=num;i++){
+		if(num==2){
+			cout<<"number is prime"<<endl;
+		}
+		else if(num%i==0){
+			cout<<"number is composite"<<endl;
+			count++;
+			break;
+		}
+		
+	}
+	if(count==0){
+		cout<<"number is prime"<<endl;
+	}
+	return 0;
+	
+}
