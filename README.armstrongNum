@@ -1,0 +1,22 @@
+//write a program to print a number is armstrong or not
+
+#include<iostream>
+using namespace std;
+int main(){
+	int num,org,sum=0,cube;
+	cout<<"enter a number"<<endl;
+	cin>>num;
+	org=num;
+	while(org!=0){
+		cube=org%10;
+		sum=(cube*cube*cube)+sum;
+		org=org/10;
+	}
+	if(num==sum){
+		cout<<"number is armstrong"<<endl;
+	}
+	else{
+		cout<<"number is not armstrong"<<endl;
+	}
+	return 0;	
+}
