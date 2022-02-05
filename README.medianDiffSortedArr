@@ -1,0 +1,60 @@
+// write a program to print median of two sorted array of different size
+
+#include<iostream>
+using namespace std;
+int arr[15];
+int sortArr(int arr1[], int arr2[],int m,int n){
+	int i=0,j=0,k=0;
+                  
+	while(i<m && j<n){                 
+	if(arr1[i]<arr2[j]){        
+		arr[k]=arr1[i];
+		i++;
+	
+	}
+	else{
+		arr[k]=arr2[j];
+		j++;
+	
+	}
+	k++;
+
+}
+while(i<m){
+	arr[k++]=arr1[i++];
+}
+while(j<n){
+	arr[k++]=arr2[j++];
+}
+for(k=0;k<m+n;k++){
+	return arr[k];
+}
+}
+void medianArr(int arr1[],int arr2[],int m,int n){
+	int med,median;
+	if((m+n)%2==0){
+		med=(m+n)/2;
+         median=(arr[med]+arr[med-1])/2;
+	}
+	else{
+		med=(m+n+1)/2;
+		median=arr[med-1];
+	}
+	
+	cout<<endl<<"median of sorted array is :"<<median<<endl;
+}
+
+int main(){
+	int arr1[]={2,5,8,9,23};  //2 3 4 5 6 8 9 10 23
+	int arr2[]={3,4,6,10};
+	int m=sizeof(arr1)/sizeof(arr1[0]);
+	int n=sizeof(arr2)/sizeof(arr2[0]);
+	sortArr(arr1,arr2,m,n);
+	medianArr(arr1,arr2,m,n);
+	
+	cout<<"sorted array is :"<<ends;
+	for(int k=0;k<m+n;k++){
+		cout<<arr[k]<<ends;
+	}
+	return 0;
+}
